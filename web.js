@@ -153,7 +153,7 @@ function handleError(error) {
 
 async function app() {
   getStream().then(getDevices).then(gotDevices);
-  tf.loadGraphModel('a/model.json').then(function(model) {
+  tf.loadGraphModel('scalem/model.json').then(function(model) {
     meter_model = model;
   });
 
